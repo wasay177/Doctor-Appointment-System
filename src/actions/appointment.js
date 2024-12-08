@@ -27,7 +27,7 @@ export async function getAppointments(role, id, status = "pending") {
   return appointments;
 }
 
-export async function updateAppointments(id, status) {
+export async function updateAppointment(id, status) {
   let update = await fetch(`${process.env.BASE_URL}api/appointment`,{
     method: "PUT",
     body: JSON.stringify({ id, status }),
