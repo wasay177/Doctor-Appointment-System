@@ -14,6 +14,7 @@ import { Button } from "@/components/ui/button";
 import { HomeIcon, PlusIcon, ClockIcon, CheckIcon, XIcon } from "lucide-react";
 import DoctorDetailSheet from "./DoctorDetailSheet";
 import Link from "next/link";
+import Image from "next/image";
 
 const DoctorCard = ({ request, isAdmin, onAccept, onReject }) => (
   <Card key={request._id}>
